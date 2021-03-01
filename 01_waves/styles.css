@@ -1,0 +1,125 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#gradient {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    #fff1eb,
+    #ace0f9,
+    #48c6ef,
+    #6f86d6,
+    #ff6e6e,
+    #ff0844
+  );
+  background-size: 800% 800%;
+  -webkit-animation: colors 30s ease infinite;
+  -moz-animation: colors 30s ease infinite;
+  animation: colors 30s ease infinite;
+}
+
+@-moz-keyframes colors {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 36px;
+  color: #fff1eb;
+  margin-bottom: 10rem;
+}
+
+header {
+  text-align: center;
+}
+
+.flex-container {
+}
+
+.waves {
+  width: 100%;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+footer {
+  background-color: #fff;
+  height: 150px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 60px;
+    max-height: 120px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
