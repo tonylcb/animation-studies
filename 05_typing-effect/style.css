@@ -1,0 +1,34 @@
+* {
+  background: #2c2b2a;
+}
+
+.wrapper {
+  height: 100vh;
+  /* centralizar o texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing {
+  color: #b5bd68;
+  width: 34ch;
+  animation: typing 3s steps(34), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
