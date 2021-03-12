@@ -1,0 +1,132 @@
+body, html {
+  background-color: #EBECF0;
+}
+
+body, p, input, select, text-area, button {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+
+div, p {
+  color: #BABECC;
+  text-shadow: 1px 1px 1px #FFF;
+}
+
+form {
+  padding: 16px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.segment {
+  padding: 32px 0;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #EBECF0;
+  text-shadow: 1px 1px 0 #FFF;
+}
+
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+input {
+  margin-right: 8px;
+  -webkit-box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+          box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+
+input:focus {
+  -webkit-box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+          box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+}
+
+button {
+  color: #61677C;
+  font-weight: bold;
+  -webkit-box-shadow: -3px -3px 10px #FFF, 3px 3px 10px #BABECC;
+          box-shadow: -3px -3px 10px #FFF, 3px 3px 10px #BABECC;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  -webkit-box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+          box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+
+button:active {
+  -webkit-box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+          box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+button .icon {
+  margin-right: 8px;
+}
+
+button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+}
+
+button.unit .icon {
+  margin-right: 0;
+}
+
+button.red {
+  display: block;
+  width: 100%;
+  color: #AE1100;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.input-group label {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/*# sourceMappingURL=style.css.map */
