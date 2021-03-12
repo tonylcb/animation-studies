@@ -1,8 +1,8 @@
 $ruler: 16px;
-$color-red: #AE1100;
-$color-bg: #EBECF0;
-$color-shadow: #BABECC;
-$color-white: #FFF;
+$color-red: #f9e7c4;
+$color-bg: #2c2b2a;
+$color-shadow: #000000;
+$color-white: #cc6666;
 
 body, html {
   background-color: $color-bg;
@@ -14,9 +14,8 @@ body, p, input, select, text-area, button {
   font-size: $ruler;
 }
 
-div, p {
-  color: $color-shadow;
-  text-shadow: 1px 1px 1px $color-white;
+h1, p {
+  color: $color-white;
 }
 
 form {
@@ -27,17 +26,15 @@ form {
 
 .segment {
   padding: $ruler*2 0;
-  // text-align: center;
 }
 
 button, input {
   border: 0;
   outline: 0;
   font-size: $ruler;
-  border-radius: $ruler*20;
+  border-radius: $ruler;
   padding: $ruler;
   background-color: $color-bg;
-  text-shadow: 1px 1px 0 $color-white;
 }
 
 label {
@@ -48,7 +45,7 @@ label {
 
 input {
   margin-right: $ruler/2;
-
+  color: $color-red;
   box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
   width: 100%;
   box-sizing: border-box;
@@ -57,20 +54,21 @@ input {
   -webkit-appearance: none;
   
   &:focus {
-    box-shadow: inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-white;
+    box-shadow: inset 3px 3px 7px $color-shadow, inset -0.5px -0.5px 8px $color-white;
   }
 } 
 
 button {
   color: #61677C;
   font-weight: bold;
-  box-shadow: -3px -3px 10px $color-white, 3px 3px 10px $color-shadow;
+
+  box-shadow: -1px -1px 3px $color-white, 2px 2px 5px $color-shadow;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   font-weight: 600;
 
   &:hover {
-    box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+    box-shadow: -2px -2px 7px $color-white, 3px 3px 7px $color-shadow;
   }
 
   &:active {
@@ -79,6 +77,10 @@ button {
 
   .icon {
     margin-right: $ruler/2;
+  }
+
+  .ion-md-settings, .ion-md-bookmark, .ion-md-arrow-back {
+    color: $color-red;
   }
 
   &.unit {
@@ -101,16 +103,5 @@ button {
     display: block;
     width: 100%;
     color: $color-red;
-  }
-}
-// 
-.input-group {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  label {
-    margin: 0;
-    flex: 1;
   }
 }

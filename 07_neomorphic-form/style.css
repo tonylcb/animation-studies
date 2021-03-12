@@ -1,5 +1,5 @@
 body, html {
-  background-color: #EBECF0;
+  background-color: #2c2b2a;
 }
 
 body, p, input, select, text-area, button {
@@ -8,9 +8,8 @@ body, p, input, select, text-area, button {
   font-size: 16px;
 }
 
-div, p {
-  color: #BABECC;
-  text-shadow: 1px 1px 1px #FFF;
+h1, p {
+  color: #cc6666;
 }
 
 form {
@@ -27,10 +26,9 @@ button, input {
   border: 0;
   outline: 0;
   font-size: 16px;
-  border-radius: 320px;
+  border-radius: 16px;
   padding: 16px;
-  background-color: #EBECF0;
-  text-shadow: 1px 1px 0 #FFF;
+  background-color: #2c2b2a;
 }
 
 label {
@@ -41,8 +39,9 @@ label {
 
 input {
   margin-right: 8px;
-  -webkit-box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
-          box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+  color: #f9e7c4;
+  -webkit-box-shadow: inset 1px 1px 2px #000000, inset -1px -1px 2px #cc6666;
+          box-shadow: inset 1px 1px 2px #000000, inset -1px -1px 2px #cc6666;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -54,15 +53,15 @@ input {
 }
 
 input:focus {
-  -webkit-box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
-          box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+  -webkit-box-shadow: inset 3px 3px 7px #000000, inset -0.5px -0.5px 8px #cc6666;
+          box-shadow: inset 3px 3px 7px #000000, inset -0.5px -0.5px 8px #cc6666;
 }
 
 button {
   color: #61677C;
   font-weight: bold;
-  -webkit-box-shadow: -3px -3px 10px #FFF, 3px 3px 10px #BABECC;
-          box-shadow: -3px -3px 10px #FFF, 3px 3px 10px #BABECC;
+  -webkit-box-shadow: -1px -1px 3px #cc6666, 2px 2px 5px #000000;
+          box-shadow: -1px -1px 3px #cc6666, 2px 2px 5px #000000;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -70,17 +69,21 @@ button {
 }
 
 button:hover {
-  -webkit-box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
-          box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+  -webkit-box-shadow: -2px -2px 7px #cc6666, 3px 3px 7px #000000;
+          box-shadow: -2px -2px 7px #cc6666, 3px 3px 7px #000000;
 }
 
 button:active {
-  -webkit-box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
-          box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+  -webkit-box-shadow: inset 1px 1px 2px #000000, inset -1px -1px 2px #cc6666;
+          box-shadow: inset 1px 1px 2px #000000, inset -1px -1px 2px #cc6666;
 }
 
 button .icon {
   margin-right: 8px;
+}
+
+button .ion-md-settings, button .ion-md-bookmark, button .ion-md-arrow-back {
+  color: #f9e7c4;
 }
 
 button.unit {
@@ -108,25 +111,6 @@ button.unit .icon {
 button.red {
   display: block;
   width: 100%;
-  color: #AE1100;
-}
-
-.input-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.input-group label {
-  margin: 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  color: #f9e7c4;
 }
 /*# sourceMappingURL=style.css.map */
