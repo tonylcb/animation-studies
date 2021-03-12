@@ -55,6 +55,7 @@ input {
 input:focus {
   -webkit-box-shadow: inset 3px 3px 7px #000000, inset -0.5px -0.5px 8px #cc6666;
           box-shadow: inset 3px 3px 7px #000000, inset -0.5px -0.5px 8px #cc6666;
+  background-color: #353433;
 }
 
 button {
@@ -71,6 +72,7 @@ button {
 button:hover {
   -webkit-box-shadow: -2px -2px 7px #cc6666, 3px 3px 7px #000000;
           box-shadow: -2px -2px 7px #cc6666, 3px 3px 7px #000000;
+  background-color: #353433;
 }
 
 button:active {
